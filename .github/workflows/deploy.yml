@@ -17,13 +17,13 @@ jobs:
 
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb
-      MONGODB_CLUSTER_ADDRESS: mongodb(could be anything) # used for establishing network connection
+      MONGODB_CLUSTER_ADDRESS: mongodb-couldbeanything # used for establishing network connection
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example 
       PORT: 8080
 
     services: #define service, it's name and configuration if needed
-      mongodb(could be anything): # used for establishing network connection
+      mongodb-couldbeanything: # used for establishing network connection
         image:  mongo
         env: #use any values in creds casue it's temp db
           MONGO_INITDB_ROOT_USERNAME: root 
